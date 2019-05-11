@@ -35,11 +35,6 @@ const Layout = ({ children }) => (
           `}
         >
           <main>{children}</main>
-          <footer>
-            © {new Date().getFullYear()}, Pizza Turtle - built with
-            {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
-          </footer>
         </div>
       </>
     )}

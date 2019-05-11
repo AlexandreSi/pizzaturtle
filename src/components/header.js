@@ -4,25 +4,24 @@ import React from "react";
 import { css } from "@emotion/core";
 
 const Header = ({ siteTitle }) => (
-  <header
-    css={css`
-      font-family: 'Stylish', sans-serif;
-    `}
-  >
+  <header>
     <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
+      css={css`
+        margin: 0 auto;
+        max-width: 960;
+        padding: 1.45rem 1.0875rem;
+        text-align: center;
+        background-color: green;
+      `}
     >
-      <h1 style={{ margin: 0 }}>
+      <h1 css={css`margin: 0;`}>
         <Link
           to="/"
-          style={{
-            color: `black`,
-            textDecoration: `none`,
-          }}
+          css={css`
+            color: red;
+            text-decoration: none;
+            background-color: white;
+          `}
         >
           {siteTitle}
         </Link>

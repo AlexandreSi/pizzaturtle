@@ -7,7 +7,7 @@ export const typographyIndex = new Typography({
     "Stylish",
     "sans-serif",
   ],
-  bodyFontFamily: ["Georgia", "serif"],
+  bodyFontFamily: ["sans-serif"],
   googleFonts: [
     {
       name: "Stylish",
@@ -16,6 +16,11 @@ export const typographyIndex = new Typography({
       ],
     },
   ],
+  overrideStyles: () => ({
+    p: {
+      margin: 0,
+    }
+  })
 })
 
 export const typographyPage2 = new Typography({
@@ -26,4 +31,9 @@ export const typographyPage2 = new Typography({
     "sans-serif",
   ],
   bodyFontFamily: ["monospace", "serif"],
+  overrideStyles: () => ({
+    p: {
+      margin: 0,
+    }
+  })
 })
